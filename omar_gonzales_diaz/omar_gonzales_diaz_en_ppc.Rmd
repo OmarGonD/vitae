@@ -1,0 +1,69 @@
+---
+name: Omar André Gonzáles Díaz
+position: "Business Analyst / Facebook ADs & Google Ads / Dashboards"
+address: "University of Piura"
+phone: +5198-800-8026
+# profilepic: mariecurie.jpg
+# www: mariecurie.com
+email: "oma.gonzales@gmail.com"
+twitter: o_gonzales
+github: OmarGonD
+linkedin: omargonzales
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Marketing Specialist with deep understanding of web technologies, Digital Advertising and A/B Testing."
+headcolor: 224190
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(tidyverse)
+library(RefManageR)
+```
+
+# About me
+
+ * Graduated in Marketing
+ * Sport: Tennis
+ * Favorite programming languages: R y Python.
+ * Languages: English, German, Italian.
+ * Loves travelling and meeting new people.
+ 
+
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  
+  "R Programming Language for Data Science, Online Course", "Johns Hopkins", "coursera.org", "2015", "Base R Programming Language. Data Visualization.",
+    "Marketing, Online Course", "University of Pennsylvania", "coursera.org", "2014", "Marketing Strategy and Brand Positioning. Customer Decision Making and the Role of Brand.",
+  "Specialization on Digital Marketing", "University of Piura", "Piura, Perú", "Mar. 2013 - Jul. 2013", "Best final work, Digital Marketing Plan 2013.",
+  "Bachelor of Marketing", "University of Piura", "Piura, Perú", "Mar. 2007 - Dec. 2011", "Top 5% student."
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Fullstack developer", "Stickers Gallito (stickersgallito.pe)", "Lima, Perú", "Dic. 2018 - Present", " I've developed the backend and frontend, including the payment methods of this Ecommerce. Understading of business logic and goals were fundamental.",
+  "Marketing Coordinator", "Group EFE - La Curacao", "Lima, Perú", "Feb. 2018 - Nov. 2018", "I was in charge of the Digital Marketing Efforts. It is a nation wide company with a budget of $100,000 anually for its digital campaigns. I was in charge of all digital channels of it's Ecommerce. Applied new strategies that lead to regain lost sales, market share and improved its profitability.",
+  "SoftLabs Perú", "Backend Developer", "Lima, Perú", "Oct. 2017 - Jan. 2018", "Backend Developer - Python.",
+  "TAAG Lead", "Starcom Mediavest Group", "Lima, Perú", "Oct. 2015 - Jun. 2017", "Team Lead TAAG (Technology and Activation Group). In charge of campaigns implementation, Dashboards development and continuos supervision, clients: Visa, CocaCola, Samsung, Falabella, UPC. Google Analytics and Google TAG Manager Specialist.",
+  "Digital Analyst", "AttachMedia", "Lima, Perú", "Oct. 2014 - Mar. 2015", "Dashboards with Tableau. Google Analytics data validation.",
+  "Digital Analyst", "Liquid - Digital Agency", "Lima, Perú", "Jun. 2012 - Feb. 2014", "Developing of Marketing Plans, SEO, PPC campaigns for nation wide Clients like: Ripley, Claro, and Belcorp."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+<!-- # Relevant Skills -->
+<!-- ```{r} -->
+<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
+<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
+<!-- ``` -->

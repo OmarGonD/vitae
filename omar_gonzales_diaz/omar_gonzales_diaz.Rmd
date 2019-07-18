@@ -1,0 +1,67 @@
+---
+name: Omar André Gonzáles Díaz
+position: "Programador Backend - Django/Python"
+address: "Universidad de Piura"
+phone: 96-330-5265
+# profilepic: mariecurie.jpg
+www: omargonzalesdiaz.rbind.io
+email: "oma.gonzales@gmail.com"
+twitter: o_gonzales
+github: OmarGonD
+linkedin: omargonzales
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Egresado de la Facultad de Comunicación de la Universidad de Piura. Actualmente Programador BackEnd (Django/Python)."
+headcolor: 224190
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(tidyverse)
+library(RefManageR)
+```
+
+# Sobre mi
+
+ * Estudié Marketing pero siempre me llamó la atención la programación.
+ * Programo en los lenguajes: R y Python.
+ * Deporte favorito: Paleta Frontón.
+ * Idiomas: Inglés, Alemán.
+ * Me gusta viajar y conocer gente nueva.
+ 
+
+# Educación
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  
+    "Marketing, Especialización Online", "Universidad de Pennsylvania", "coursera.org", "2014", "Marketing Strategy and Brand Positioning. Customer Decision Making and the Role of Brand.",
+  "Diplomado en Marketing Digital", "Universidad de Piura", "Piura, Perú", "Mar. 2013 - Jul. 2013", "Mejor trabajo final, Plan de Marketing Digital 2013.",
+  "Egresado de la Facultad de Comunicación", "Universidad de Piura", "Piura, Perú", "Mar. 2007 - Dic. 2011", "Tercio Superior, Especialización en Marketing."
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Experiencia
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Jefe de Tecnología", "Stickers Gallito (stickersgallito.pe)", "Lima, Perú", "Ago. 2018 - Presente", "Cofundador, encargado del desarrollo de la webapp y puesta en producción. Responsable del correcto funcionamiento del sitio: www.stickersgallito.pe",
+  "Coordinador de Marketing", "Grupo EFE - La Curacao", "Lima, Perú", "Feb. 2018 - Nov. 2018", "Encargado de los esfuerzos de Marketing Digital. Responsable de la inversión y distribución de un presupuesto de más de $100,000 anuales para las campañas de marketing digital. En esta empresa manejaba todos los canales de comunicación digital para su Ecommerce. Aplicamos nuevas estrategias que llevaron a incrementar las ventas, la cuota de mercado y, en general, sus ganancias.",
+  "SoftLabs Perú", "Programador Backend", "Lima, Perú", "Jul. 2017 - Ene. 2018", "Desarrollo Backend en el lenguaje de programación Python. Validación de formularios.",
+  "TAAG Lead", "Starcom Mediavest Group", "Lima, Perú", "Oct. 2015 - Jun. 2017", "Jefe del área TAAG (Technology and Activation Group). Encargado de la implementación y seguimiento de las campañas digitales de clientes internacionales (Visa, CocaCola, Samsung, Falabella), así como de clientes locales (UPC).",
+  "Analista Digital", "AttachMedia", "Lima, Perú", "Oct. 2014 - Mar. 2015", "Elaboración de Dashboards con Tableau. Validación de data en Google Analytics.",
+  "Analista Digital", "Liquid - Agencia Digital", "Lima, Perú", "Jun. 2012 - Set. 2014", " Desarrollo de estrategias de Marketing Digital y planes tácticos para proyectos de SEO, eCommerce y Analítica Digital."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+<!-- # Relevant Skills -->
+<!-- ```{r} -->
+<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
+<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
+<!-- ``` -->

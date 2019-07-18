@@ -1,0 +1,67 @@
+---
+name: Omar André Gonzáles Díaz
+position: "Business Analyst / AdServers / Dashboards"
+address: "University of Piura"
+phone: +51-963305265
+# profilepic: mariecurie.jpg
+# www: mariecurie.com
+email: "oma.gonzales@gmail.com"
+twitter: o_gonzales
+github: OmarGonD
+linkedin: omargonzales
+date: "`r format(Sys.time(), '%B %Y')`"
+aboutme: "Bachelor in Marketing. Digital Marketing Specialist, with deep understanding of web technologies."
+headcolor: 224190
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tibble)
+library(tidyverse)
+library(RefManageR)
+```
+
+# About me
+
+ * Bachelor in Marketing
+ * Sport: Tennis
+ * Favorite programming languages: R y Python.
+ * Languages: English, German, Italian.
+ * Loves travelling and meeting new people.
+ 
+
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  
+    "Marketing, Online Course", "University of Pennsylvania", "coursera.org", "2014", "Marketing Strategy and Brand Positioning. Customer Decision Making and the Role of Brand.",
+  "Specialization on Digital Marketing", "University of Piura", "Piura, Perú", "Mar. 2013 - Jul. 2013", "Best final work, Digital Marketing Plan 2013.",
+  "Bachelor of Marketing", "University of Piura", "Piura, Perú", "Mar. 2007 - Dec. 2011", "Top 5% students."
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Frontend developer", "Stickers Gallito (stickersgallito.pe)", "Lima, Perú", "Dic. 2018 - Present", "Frontend developer.",
+  "Marketing Coordinator", "Group EFE - La Curacao", "Lima, Perú", "Feb. 2018 - Nov. 2018", "Paid Marketing, Social media specialist.",
+  "TAAG Lead", "Starcom Mediavest Group", "Lima, Perú", "Oct. 2015 - Jun. 2017", "Team Lead TAAG (Technology and Activation Group). In charge of campaigns implementation and continuous supervision for clients like: Visa, CocaCola, Samsung, Falabella,UPC",
+  "Digital Analyst", "AttachMedia", "Lima, Perú", "Oct. 2014 - Mar. 2015", "Dashboards with Tableau. Google Analytics implementation and data validation.",
+  "Digital Analyst", "Liquid - Digital Agency", "Lima, Perú", "Jun. 2012 - Feb. 2014", "Developing of Marketing Plans, SEO, PPC campaigns. taco"
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+<!-- # Relevant Skills -->
+<!-- ```{r} -->
+<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
+<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
+<!-- ``` -->
